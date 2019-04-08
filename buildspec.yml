@@ -3,16 +3,11 @@ version: 0.2
 phases:
   install:
     commands:
-      - apt update
-      - apt install git vim -y
       - curl -o /tmp/chefdk.deb https://packages.chef.io/files/current/chefdk/4.0.1/ubuntu/18.04/chefdk_4.0.1-1_amd64.deb
       - dpkg -i /tmp/chefdk.deb
-      - gem install bundler:2.0.1
+      # - gem install bundler:2.0.1
   build:
     commands:
-      - ls
-      - ls /opt
-      - ls /opt/chefdk
-      # - /opt/chefdk/bin/cookstyle
-      # - /opt/chefdk/bin/foodcritic -B ./
+      - /opt/chefdk/bin/cookstyle
+      - /opt/chefdk/bin/foodcritic -B ./
       # - /opt/chefdk/bin/rspec
