@@ -10,4 +10,4 @@ phases:
     commands:
       - /opt/chefdk/bin/cookstyle
       - /opt/chefdk/bin/foodcritic -B ./
-      # - /opt/chefdk/bin/rspec
+      - /opt/chefdk/embedded/bin/rspec
