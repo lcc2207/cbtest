@@ -10,6 +10,6 @@ phases:
       - gem install bundler:2.0.1
   build:
     commands:
-      - cookstyle
-      - foodcritic -B ./
-      - rspec
+      - /opt/chefdk/bin/cookstyle
+      - /opt/chefdk/bin/foodcritic -B ./
+      - /opt/chefdk/bin/rspec
