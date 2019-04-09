@@ -5,7 +5,6 @@ phases:
     commands:
       - curl -o /tmp/chefdk.deb https://packages.chef.io/files/current/chefdk/4.0.1/ubuntu/18.04/chefdk_4.0.1-1_amd64.deb
       - dpkg -i /tmp/chefdk.deb
-      # - gem install bundler:2.0.1
   build:
     commands:
       - /opt/chefdk/bin/cookstyle
